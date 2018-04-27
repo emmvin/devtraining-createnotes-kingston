@@ -44,7 +44,7 @@ function() {
 		//use service portal helper method to get some display values
 		$sp.getRecordDisplayValues(noteObj, noteGR, 'number,title,sys_id');
 		//get the first 20 characters of the description
-		noteObj.note = noteGR.getValue('note').slice(0,20);
+		noteObj.note = noteGR.getValue('note').slice(0,100);
 		//push the populated obj into the array
 		data.notes.push(noteObj);	
 	}
@@ -54,14 +54,14 @@ function() {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-04-26 02:21:42</sys_created_on>
         <sys_id>ab7834cc4f3113002343f9aba310c799</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Notes List</sys_name>
         <sys_package display_value="CreateNotes" source="x_snc_createnotes">df5fd9a5090232007f44e1046c8ff69f</sys_package>
         <sys_policy/>
         <sys_scope display_value="CreateNotes">df5fd9a5090232007f44e1046c8ff69f</sys_scope>
         <sys_update_name>sp_widget_ab7834cc4f3113002343f9aba310c799</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-04-27 15:18:56</sys_updated_on>
+        <sys_updated_on>2018-04-27 17:10:21</sys_updated_on>
         <template><![CDATA[<div>
   <!-- your widget template -->
   <div class="panel panel-default">
